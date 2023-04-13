@@ -1,0 +1,9 @@
+version: "3"
+services:
+  s3interface:
+    container_name: "s3_interface"
+    build:
+        context: .
+        dockerfile: Dockerfile
+    ports:
+        - "5345:5345"
